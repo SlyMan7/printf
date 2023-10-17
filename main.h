@@ -43,7 +43,7 @@ int handle_print(const char *fmt, int *i, va_list list, char buffer[], int flags
 int printc(va_list types, char buffer[], int flags, int width, int precision, int size);
 int prints(va_list types, char buffer[], int flags, int width, int precision, int size);
 int print_perc(va_list types, char buffer[], int flags, int width, int precision, int size);
-int printI(va_list types, char buffer[], int flags, int width, int precision, int size);
+int print_int(va_list types, char buffer[], int flags, int width, int precision, int size);
 int printbi(va_list types, char buffer[], int flags, int width, int precision, int size);
 int printun(va_list types, char buffer[], int flags, int width, int precision, int size);
 int printuno(va_list types, char buffer[], int flags, int width, int precision, int size);

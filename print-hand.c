@@ -18,8 +18,8 @@ int handle_print(const char *fmt, int *ind, va_list list, char buffer[], int fla
 	int i, unknow_len = 0, printed_chars = -1;
 	fmt_t fmt_types[] = {
 		{'c', printc}, {'s', prints}, {'%', print_perc},
-		{'i', printI}, {'d', printI}, {'b', printbi},
-		{'u', printun}, {'o', printuno}, {'x', print_hex},
+		{'i', print_int}, {'d', print_int}, {'b', printbi},
+		{'u', printun}, {'o', printuno}, {'x', printunuphex},
 		{'X', printunuphex}, {'p', printp}, {'S', printnon},
 		{'r', printrev}, {'R', printrot13}, {'\0', NULL}
 	};
