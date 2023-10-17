@@ -1,12 +1,20 @@
 #include "main.h"
 
 /**
- * print% - prints the percentage symbol
- * Return: 1
+ * print% - Prints a percent sign
+ * @types: List of arguments
+ * @buffer: Buffer array to handle print
+ * Return: Number of % printed
  */
-
-int print%(void)
+int print_percent(va_list types, char buffer[],
+	int flags, int width, int precision, int size)
 {
-	_putchar(37);
-	return (1);
+	UNUSED(types);
+	UNUSED(buffer);
+	UNUSED(flags);
+	UNUSED(width);
+	UNUSED(precision);
+	UNUSED(size);
+	return (write(1, "%%", 1));
 }
+

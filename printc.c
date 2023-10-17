@@ -1,35 +1,16 @@
 #include "main.h"
-#include <stdarg.h>
+
+/************************* PRINT CHAR *************************/
 
 /**
- * printc - prints out the characters it receives
- * @format - the number of arguments
+ * print_char - Prints a character
+ * @types: List a of arguments
+ *Return: Number of chars printed
  */
-
-void printc(const char *format, ...)
+int printc(va_list types, char buffer[],
+	int flags, int width, int precision, int size)
 {
-	char character;
-	va_list cs;
-	
-	va_start(cs, format);
-	while (*format != '\0')
-	{
-		if (*format == '%')
-		{
-			format++;
-			if (*format == 'c')
-			{
-				character = va_arg(cs, char);
-				_putchar(character);
-			}
-		}
-		else
-		{
-			_putchar(*format);
-		}
+	char c = va_arg(types, int);
 
-		format++;
-	}
-
-	va_end(cs);
+	return (handle_write_char(c, buffer, flags, width, precision, size));
 }
