@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * printrev - Prints reverse string.
+ * printrev - Prints string in reverse
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
+ *
  * Return: Numbers of chars printed
  */
 

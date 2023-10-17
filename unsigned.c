@@ -1,15 +1,16 @@
 #include "main.h"
 
 /**
- * write_unsgnd - Writes an unsigned number
+ * write_unsgnd - Which Writes an unsigned number
  * @is_negative: Number indicating if the num is negative
  * @ind: Index at which the number starts in the buffer
  * @buffer: Array of chars
- * @flags: Flags specifiers
- * @width: Width specifier
- * @precision: Precision specifier
- * @size: Size specifier
- * Return: Number of written chars.
+ * @flags: the Flags specifiers
+ * @width: the Width specifier
+ * @precision: for Precision specifier
+ * @size: the size specifier
+ *
+ * Return: the number of written chars.
  */
 
 int write_unsgnd(int is_negative, int ind,

@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * print_binary - Prints an unsigned number
+ * print_binary - that which Prints an unsigned number
  * @types: List of arguments
- * @buffer: Buffer array to handle print
- * Return: Numbers of char printed.
+ * @buffer: An array to handle print
+ *
+ * Return: the numbers of char printed.
  */
 int printbi(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -40,4 +41,3 @@ int printbi(va_list types, char buffer[],
 	}
 	return (count);
 }
-

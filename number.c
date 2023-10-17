@@ -1,15 +1,16 @@
 #include "main.h"
 
 /**
- * write_number - Prints 
- * @is_negative: List of arguments
- * @ind: char types.
- * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
- * @width: get width.
+ * write_number - that Prints 
+ * @is_negative: list of arguments
+ * @ind: character types
+ * @buffer: an array to handle print
+ * @flags:  to calculates active flags
+ * @width: get width
  * @precision: precision specifier
- * @size: Size specifier
- * Return: Number of chars printed.
+ * @size: the size specifier
+ *
+ * Return: the number of chars printed.
  */
 
 int write_number(int is_negative, int ind, char buffer[],

@@ -2,10 +2,10 @@
 
 /****************** PRINT POINTER ******************/
 /**
- * printp - Prints the value of a pointer variable
- * @types: List a of arguments
- * @buffer: Buffer array to handle print
- * Return: Number of chars printed.
+ * printp - that Prints the value of pointer variable
+ * @types: List of arguments types
+ * @buffer: An array to handle print
+ * Return: the number of chars printed.
  */
 int printp(va_list types, char buffer[], int flags, int width, int precision, int size)
 {

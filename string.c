@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * handle_write_char - Prints a string
- * @c: char types.
- * @buffer: Buffer array to handle print
+ * handle_write_char - that writes or Prints a string
+ * @c: the char types.
+ * @buffer: Array to handle print
  * @flags:  Calculates active flags.
- * @width: get width.
- * @precision: precision specifier
- * @size: Size specifier
+ * @width: to get width.
+ * @precision: for precision specifier
+ * @size: the Size specifier
  *
  * Return: Number of chars printed.
  */

@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * prints - Prints a string
- * @types: List a of arguments
- * @buffer: Buffer array to handle print
+ * prints - that which Prints a string
+ * @types: List of arguments
+ * @buffer: the Array to handle print
  *
- * Return: Number of chars printed
+ * Return: the number of chars printed
  */
 int prints(va_list types, char buffer[],int flags, int width, int precision, int size)
 {

@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * printun - Prints an unsigned number
- * @types: List a of arguments
- * @buffer: Buffer array to handle print
- * Return: Number of chars printed.
+ * printun - that Prints an unsigned number
+ * @types: List of arguments
+ * @buffer: An array to handle print
+ * Return: the number of chars printed.
  */
 
 int printun(va_list types, char buffer[],
@@ -14,20 +14,15 @@ int printun(va_list types, char buffer[],
 	unsigned long int num = va_arg(types, unsigned long int);
 
 	num = convert_size_unsgnd(num, size);
-
 	if (num == 0)
 		buffer[i--] = '0';
-
 	buffer[BUFF_SIZE - 1] = '\0';
-
 	while (num > 0)
 	{
 		buffer[i--] = (num % 10) + '0';
 		num /= 10;
 	}
-
 	i++;
-
 	return (write_unsgnd(0, i, buffer, flags, width, precision, size));
 }
 

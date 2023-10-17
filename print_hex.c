@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * print_hex - Prints a hexadecimal number in lower or upper
+ * print_hex - Prints hexadecimal number in lower or upper case
  * @types: List of arguments
  * @map_to: Array of values to map the number to
  * @buffer: Buffer array to handle print
+ *
  * Return: Number of chars printed
  */
 

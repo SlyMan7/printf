@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * print_int - Print int
+ * print_int - that Prints an int.
  * @types: List of arguments
- * @buffer: Buffer array to handle print
+ * @buffer: Array to handle print
+ *
  * Return: Number of chars printed
  */
 
@@ -28,15 +29,12 @@ int print_int(va_list types, char buffer[],
 		num = (unsigned long int)((-1) * n);
 		is_negative = 1;
 	}
-
 	while (num > 0)
 	{
 		buffer[i--] = (num % 10) + '0';
 		num /= 10;
 	}
-
 	i++;
-
 	return (write_number(is_negative, i, buffer, flags, width, precision, size));
 }
 

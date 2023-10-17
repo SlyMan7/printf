@@ -3,7 +3,7 @@
 /************************* PRINT CHAR *************************/
 
 /**
- * print_char - Prints a character
+ * print_char - that Prints a character
  * @types: List a of arguments
  *
  *Return: Number of chars printed

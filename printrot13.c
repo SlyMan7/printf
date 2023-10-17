@@ -1,13 +1,14 @@
 #include "main.h"
 
 /**
- * printrot13 - Print a string in rot13.
+ * printrot13 - that Prints a string in rot13
  * @types: Lista of arguments
- * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
- * @width: get width
- * @precision: Precision specification
- * @size: Size specifier
+ * @buffer: Array to handle print
+ * @flags:  that Calculates active flags
+ * @width: to get width
+ * @precision: for Precision specification
+ * @size: the Size specifier
+ *
  * Return: Numbers of chars printed
  */
 

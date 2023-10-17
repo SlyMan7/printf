@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * printuno - Prints an unsigned number in octal notation
- * @types: Lista of arguments
- * @buffer: Buffer array to handle print
+ * printuno - that Prints an unsigned number in octal notation
+ * @types: List of arguments
+ * @buffer: Array to handle print
  *
- * Return: Number of chars printed
+ * Return: the number of chars printed
  */
 int printuno(va_list types, char buffer[], int flags, int width, int precision, int size)
 {

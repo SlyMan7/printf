@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * write_num - Write a number using a bufffer
- * @ind: Index at which the number starts on the buffer
- * @buffer: Buffer
+ * write_num - that Writes a number using a bufffer
+ * @ind: the Index which the number starts on the buffer
+ * @buffer: Buffer Array
  * @flags: Flags
  * @width: width
- * @prec: Precision specifier
+ * @prec: the Precision specifier
  * @length: Number length
- * @padd: Pading char
- * @extra_c: Extra char
+ * @padd: for Pading char
+ * @extra_c: for the extra char
  *
  * Return: Number of printed chars.
  */
