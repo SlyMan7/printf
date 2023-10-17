@@ -6,7 +6,7 @@
  * @buffer: Buffer array to handle print
  * Return: Numbers of char printed.
  */
-int printb(va_list types, char buffer[],
+int printbi(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	unsigned int n, m, i, sum;

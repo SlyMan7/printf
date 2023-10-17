@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * print_hex - Prints a hexadecimal number in lower or upper
  * @types: Lista of arguments
@@ -5,6 +7,7 @@
  * @buffer: Buffer array to handle print
  * Return: Number of chars printed
  */
+
 int print_hex(va_list types, char map_to[], char buffer[],
 	int flags, char flag_ch, int width, int precision, int size)
 {

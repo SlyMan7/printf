@@ -38,25 +38,26 @@ struct fmt
 typedef struct fmt fmt_t;
 
 int _printf(const char *format, ...);
+void print_buffer(char buffer[], int *buff_ind);
 int handle_print(const char *fmt, int *i, va_list list, char buffer[], int flags, int width, int precision, int size);
 int printc(va_list types, char buffer[], int flags, int width, int precision, int size);
 int prints(va_list types, char buffer[], int flags, int width, int precision, int size);
-int print%(va_list types, char buffer[], int flags, int width, int precision, int size);
+int print_perc(va_list types, char buffer[], int flags, int width, int precision, int size);
 int printI(va_list types, char buffer[], int flags, int width, int precision, int size);
-int printb(va_list types, char buffer[], int flags, int width, int precision, int size);
+int printbi(va_list types, char buffer[], int flags, int width, int precision, int size);
 int printun(va_list types, char buffer[], int flags, int width, int precision, int size);
 int printuno(va_list types, char buffer[], int flags, int width, int precision, int size);
 int printunhex(va_list types, char buffer[], int flags, int width, int precision, int size);
 int printunuphex(va_list types, char buffer[], int flags, int width, int precision, int size);
 int print_hex(va_list types, char map_to[], char buffer[], int flags, char flag_ch, int width, int precision, int size);
-int printnon(va_list types, char buffer[], int flags, int width, int precision, int size); //prints non printable characters
-int printp(va_list types, char buffer[], int flags, int width, int precision, int size); //prints pointer
+int printnon(va_list types, char buffer[], int flags, int width, int precision, int size);
+int printp(va_list types, char buffer[], int flags, int width, int precision, int size);
 int get_flags(const char *format, int *i);
 int get_width(const char *format, int *i, va_list list);
 int get_precision(const char *format, int *i, va_list list);
 int get_size(const char *format, int *i);
-int printrev(va_list types, char buffer[], int flags, int width, int precision, int size); //Reverses a string
-int printrot13(va_list types, char buffer[], int flags, int width, int precision, int size); //String in rot 13
+int printrev(va_list types, char buffer[], int flags, int width, int precision, int size);
+int printrot13(va_list types, char buffer[], int flags, int width, int precision, int size);
 int handle_write_char(char c, char buffer[], int flags, int width, int precision, int size);
 int write_number(int is_positive, int ind, char buffer[], int flags, int width, int precision, int size);
 int write_num(int ind, char bff[], int flags, int width, int precision, int length, char padd, char extra_c);

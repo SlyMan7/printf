@@ -6,7 +6,7 @@
  * @buffer: Buffer array to handle print
  * Return: Number of % printed
  */
-int print_percent(va_list types, char buffer[],
+int print_perc(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	UNUSED(types);
