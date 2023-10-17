@@ -3,6 +3,7 @@
  * prints - Prints a string
  * @types: List a of arguments
  * @buffer: Buffer array to handle print
+ *
  * Return: Number of chars printed
  */
 int print_string(va_list types, char buffer[],
@@ -22,13 +23,10 @@ int print_string(va_list types, char buffer[],
 		if (precision >= 6)
 			str = "      ";
 	}
-
 	while (str[length] != '\0')
 		length++;
-
 	if (precision >= 0 && precision < length)
 		length = precision;
-
 	if (width > length)
 	{
 		if (flags & F_MINUS)
@@ -46,7 +44,5 @@ int print_string(va_list types, char buffer[],
 			return (width);
 		}
 	}
-
 	return (write(1, str, length));
 }
-

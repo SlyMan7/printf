@@ -5,6 +5,7 @@
 /**
  * print_char - Prints a character
  * @types: List a of arguments
+ *
  *Return: Number of chars printed
  */
 int printc(va_list types, char buffer[],

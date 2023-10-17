@@ -13,28 +13,20 @@ int print_hex(va_list types, char map_to[], char buffer[],
 	unsigned long int init_num = num;
 
 	UNUSED(width);
-
 	num = convert_size_unsgnd(num, size);
-
 	if (num == 0)
 		buffer[i--] = '0';
-
 	buffer[BUFF_SIZE - 1] = '\0';
-
 	while (num > 0)
 	{
 		buffer[i--] = map_to[num % 16];
 		num /= 16;
 	}
-
 	if (flags & F_HASH && init_num != 0)
 	{
 		buffer[i--] = flag_ch;
 		buffer[i--] = '0';
 	}
-
 	i++;
-
 	return (write_unsgnd(0, i, buffer, flags, width, precision, size));
 }
-
