@@ -16,7 +16,7 @@ int printrot13(va_list types, char buffer[],
 {
 	char x;
 	char *str;
-i	unsigned int i, j;
+	unsigned int i, j;
 	int count = 0;
 	char in[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char out[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
