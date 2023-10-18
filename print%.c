@@ -3,7 +3,11 @@
 /**
  * print% - Print percentage sign
  * @types: List of arguments
+ * @flags: to calculates active flags
  * @buffer: Buffer array to handle print
+ * @precision: for precision specification
+ * @width: to get width.
+ * @size: the size specifier
  *
  * Return: The Number of % printed
  */

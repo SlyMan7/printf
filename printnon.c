@@ -4,7 +4,10 @@
  * printnon - that which Prints ascii codes in hexa of non printable chars
  * @types: List of arguments
  * @buffer: Array to handle print
- *
+ * @flags: to calculates active flags
+ * @width: to get width
+ * @precision: for precision specification
+ * @size: the size specifier
  * Return: the number of chars printed
  */
 int printnon(va_list types, char buffer[],

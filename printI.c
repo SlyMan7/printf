@@ -2,9 +2,12 @@
 
 /**
  * print_int - that Prints an int.
+ * @flags:  to calculates active flags
+ * @precision: for Precision specification
  * @types: List of arguments
  * @buffer: Array to handle print
- *
+ * @width: to get width
+ * @size: the size specifier
  * Return: Number of chars printed
  */
 

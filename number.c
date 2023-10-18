@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * write_number - that Prints 
+ * write_number - that Prints
  * @is_negative: list of arguments
  * @ind: character types
  * @buffer: an array to handle print

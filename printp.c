@@ -3,11 +3,16 @@
 /****************** PRINT POINTER ******************/
 /**
  * printp - that Prints the value of pointer variable
+ * @size: the size specifier
  * @types: List of arguments types
+ * @precision: for Precision specification
  * @buffer: An array to handle print
+ * @flags: to calculates active flags
+ * @width: to get width
  * Return: the number of chars printed.
  */
-int printp(va_list types, char buffer[], int flags, int width, int precision, int size)
+int printp(va_list types, char buffer[], int flags, int width, int precision,
+		int size)
 {
 	char extra_c = 0, padd = ' ';
 	int ind = BUFF_SIZE - 2, length = 2, padd_start = 1;

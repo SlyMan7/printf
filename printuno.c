@@ -4,10 +4,14 @@
  * printuno - that Prints an unsigned number in octal notation
  * @types: List of arguments
  * @buffer: Array to handle print
- *
+ * @flags: to calculates active flags
+ * @width: to get width
+ * @precision: for precision specification
+ * @size: the size specifier
  * Return: the number of chars printed
  */
-int printuno(va_list types, char buffer[], int flags, int width, int precision, int size)
+int printuno(va_list types, char buffer[], int flags, int width,
+		int precision, int size)
 {
 
 	int i = BUFF_SIZE - 2;

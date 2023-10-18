@@ -3,10 +3,15 @@
  * prints - that which Prints a string
  * @types: List of arguments
  * @buffer: the Array to handle print
+ * @flags: to calculates active flags
+ * @width: to get width
+ * @precision: for precision specification
+ * @size: the size specifier
  *
  * Return: the number of chars printed
  */
-int prints(va_list types, char buffer[],int flags, int width, int precision, int size)
+int prints(va_list types, char buffer[], int flags, int width,
+		int precision, int size)
 {
 	int length = 0, i;
 	char *str = va_arg(types, char *);

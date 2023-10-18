@@ -5,7 +5,11 @@
 /**
  * print_char - that Prints a character
  * @types: List a of arguments
- *
+ * @flags: to calculates active flags
+ * @size: Size specifier
+ * @precision: Precision specification
+ * @width: Width
+ * @buffer: An array to handle print
  *Return: Number of chars printed
  */
 int printc(va_list types, char buffer[],

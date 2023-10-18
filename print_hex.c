@@ -5,11 +5,16 @@
  * @types: List of arguments
  * @map_to: Array of values to map the number to
  * @buffer: Buffer array to handle print
- *
+ * @flag_ch: Calculates the number of active flags
+ * @size: the size specifier
+ * @precision: for precision specification
+ * @width: to get width
+ * @flags: to calculates active flags
  * Return: Number of chars printed
  */
 
-int print_hex(va_list types, char map_to[], char buffer[], int flags, char flag_ch, int width, int precision, int size)
+int print_hex(va_list types, char map_to[], char buffer[], int flags,
+		char flag_ch, int width, int precision, int size)
 {
 	int i = BUFF_SIZE - 2;
 	unsigned long int num = va_arg(types, unsigned long int);

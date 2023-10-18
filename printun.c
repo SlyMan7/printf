@@ -2,6 +2,10 @@
 
 /**
  * printun - that Prints an unsigned number
+ * @flags: to calculates active flags
+ * @precision: for precision specification
+ * @width: to get width.
+ * @size: the size specifier
  * @types: List of arguments
  * @buffer: An array to handle print
  * Return: the number of chars printed.

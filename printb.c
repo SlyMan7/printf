@@ -3,6 +3,10 @@
 /**
  * print_binary - that which Prints an unsigned number
  * @types: List of arguments
+ * @size: the size specifier
+ * @width: to get width
+ * @flags: to calculates active flags
+ * @precision: for precision specification
  * @buffer: An array to handle print
  *
  * Return: the numbers of char printed.

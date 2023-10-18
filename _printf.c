@@ -31,7 +31,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			print_buffer(buffer, &buff_ind); //Calling print_buffer function to display the contents of the buffer.
+			print_buffer(buffer, &buff_ind);
 			flags = get_flags(format, &i);
 			width = get_width(format, &i, list);
 			precision = get_precision(format, &i, list);
@@ -51,12 +51,10 @@ int _printf(const char *format, ...)
 
 	return (printed_chars);
 }
-
 /**
  * print_buffer - that Prints the contents of the buffer if found
  * @buffer: an array of chars
  * @buff_ind: the Index to add next char, represents the length
- * 
  * Return: 0
  */
 void print_buffer(char buffer[], int *buff_ind)

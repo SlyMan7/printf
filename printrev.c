@@ -2,8 +2,12 @@
 
 /**
  * printrev - Prints string in reverse
+ * @width: to get width
+ * @size: the size specifier
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
+ * @flags: to calculates active flags
+ * @precision: for precision specification
  *
  * Return: Numbers of chars printed
  */
