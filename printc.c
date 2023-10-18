@@ -3,7 +3,7 @@
 /************************* PRINT CHAR *************************/
 
 /**
- * print_char - that Prints a character
+ * printc - that Prints a character
  * @types: List a of arguments
  * @flags: to calculates active flags
  * @size: Size specifier

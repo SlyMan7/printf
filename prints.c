@@ -2,7 +2,7 @@
 /**
  * prints - that which Prints a string
  * @types: List of arguments
- * @buffer: the Array to handle print
+ * @buffer[]: the Array to handle print
  * @flags: to calculates active flags
  * @width: to get width
  * @precision: for precision specification
